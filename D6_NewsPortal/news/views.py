@@ -6,7 +6,7 @@ class PostsList (ListView):
     model = Post
     ordering = '-created_on'
     template_name = 'posts.html'
-    context_object_name = 'posts' #пока не понял зачем это тут надо
+    context_object_name = 'posts'
 
 class PostDetail(DetailView):
     model = Post
